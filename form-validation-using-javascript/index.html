@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+</head>
+<body>
+<form id="form" action="submit.html" method="post" onSubmit="return validateform();">
+	<h1>Fill the form</h1>
+	
+	<div  class="row">
+		<label>Name:</label>
+		<input type="text" name="name" id="name"/><br><br>
+	</div>
+
+	<div  class="row">
+		<label>Address:</label>
+		<input type="text" name="address" id="address"/><br><br>
+	</div>
+
+	<div  class="row">
+		<label>Phone:</label>
+		<input type="tel" name="phone" id="phone"/><br><br>
+	</div>
+
+	<div  class="row">
+		<label>Email:</label>
+		<input type="email" name="email" id="email"/><br><br>
+	</div>
+
+	<div class="row">
+		<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+	</div>
+
+	<input type="submit" name="submit"/>
+</form>
+
+	<script type="text/javascript" src="validate.js">	
+</script>
+</body>
+</html>
